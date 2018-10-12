@@ -208,7 +208,11 @@ gateway 10.10.20.2
 #### Notlar
 
 - UNIX'i ağa dahil etmek için 4 adet bilgiye ihtiyaç vardır. (IP, Netmask, Gateway, DNS)
-
+ -IP internetteki kimliklerimizdir.
+ -Netmask veya Subnetmask ağın büyüklüğünü belirlemek için kullanılır. Ayrıca Netmask kullanımı ile iki farklı IP adresinin aynı mı       yoksa farklı ağlarda mı olduğu belirlenebilir.
+ -Gateway internete çıkış kapımızdır. Gatewaye routerımızın IP adresini verdiğimiz de farklı ağlarda bulunan IP adreslerine ait           paketleri bilgisayar bu adrese gönderir.
+ -DNS hostname-IP eşleşmesini sağlar. DNS sunucuları sayesinde kolayca internet adreslerini kullanırız.
+  
 - DHCP otomatik IP atamada önemli rol oynar.
 
 - DHCP, IP atarken, aynı zamanda bunu kaydını tutar.
@@ -216,6 +220,7 @@ gateway 10.10.20.2
 - Bir ethernet kartına birden fazla IP adresi konumlandırmak için IP Aliasing yapılır.
 
 - 255.255.255.0 bulunduğu class'ın tamamı demektir. Yani /24'tür.
+  -Mantığı ise ikilik düzenden gelir.
 
 - 192.168.10.15 gibi bir IP adresi var ise Network adresi 192.168.10.0'dır. Broadcast'i tanımlı IP'nin son geçerli adresidir. Yani 192.168.10.255'tir.
 
